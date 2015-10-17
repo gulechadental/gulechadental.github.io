@@ -10,7 +10,7 @@
 
 	body
 	{
-		background: #141414;
+		background: #ffffff;
 	}
 
 	body,input,textarea,select
@@ -293,7 +293,7 @@
 	#header
 	{
 		position: relative;
-		background: #2a2f27 url(../images/banner.jpg) no-repeat;
+		background: #d4eecd url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPgo8bGluZWFyR3JhZGllbnQgaWQ9Imc0NzgiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4MT0iMTAwJSIgeTE9IjEwMCUiIHgyPSIwJSIgeTI9IjAlIj4KPHN0b3Agc3RvcC1jb2xvcj0iIzMwMzU0NSIgb2Zmc2V0PSIwIi8+PHN0b3Agc3RvcC1jb2xvcj0iIzAwODA4MCIgb2Zmc2V0PSIxIi8+CjwvbGluZWFyR3JhZGllbnQ+CjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjZzQ3OCkiIC8+Cjwvc3ZnPg==) no-repeat;
 		background-size: cover;
 	}
 
@@ -303,6 +303,7 @@
 	
 	#nav
 	{
+		margin-top:40px;
 	}
 
 		#nav ul
@@ -324,7 +325,10 @@
 	.motto
 	{
 		font-weight: bold;
-		color: #00b0b0 !important;
+		color: #ffffff !important;
+	}
+	.white, .bottomspace {
+		color: #ffffff;
 	}
 /*********************************************************************************/
 /* Main                                                                          */
@@ -379,7 +383,7 @@
 		padding: 3em 0em;
 		letter-spacing: 1px;
 		text-align: center;
-		color: rgba(255,255,255,.2);
+		color: rgba(24,24,24,.6);
 	}
 	
 	#copyright .container
@@ -389,7 +393,7 @@
 	#copyright a
 	{
 		text-decoration: none;
-		color: rgba(255,255,255,.3);
+		color: rgba(24,24,24,.7);
 	}	
 
 

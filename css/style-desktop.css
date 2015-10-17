@@ -30,7 +30,7 @@
 	
 		.homepage #header
 		{
-			padding: 15em 0em;
+			padding: 5em 0em;
 		}
 
 		#header .container
@@ -43,7 +43,7 @@
 
 	#logo
 	{
-		margin-bottom: 3em;
+		margin-bottom: 1em;
 	}
 	
 		#logo h1
@@ -102,7 +102,7 @@
 				font-weight: 200;
 				font-size: 1em;
 				outline: 0;
-				color: rgba(0,192,192,.8);
+				color: rgba(255,255,255,.8);
 			}
 
 
@@ -116,8 +116,8 @@
 				background: none;
 				border-radius: 40px;
 				border: 2px solid;
-				border-color: rgba(0,192,192,1);
-				color: rgba(0,192,192,1);
+				border-color: rgba(255,255,255,1);
+				color: rgba(255,255,255,1);
 			}
 
 			#nav > ul > li > ul

@@ -9,7 +9,7 @@ skel.init({
 	resetCSS: true,
 	boxModel: 'border',
 	grid: {
-		gutters: 50
+		gutters: 40
 	},
 	breakpoints: {
 		'mobile': {
