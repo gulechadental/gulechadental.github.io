@@ -122,6 +122,36 @@
       margin: 0 auto 32px;
       line-height: 1.5;
     }
+    /* Hero testimonial rotator */
+    .hero-testimonial {
+      max-width: 640px;
+      margin: 0 auto 32px;
+      min-height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+    .hero-testimonial blockquote {
+      font-size: 17px;
+      font-style: italic;
+      color: #e7e5e4;
+      line-height: 1.5;
+      animation: fadeQuote 5s ease-in-out;
+    }
+    .hero-testimonial cite {
+      display: block;
+      font-style: normal;
+      font-size: 13px;
+      color: var(--amber);
+      font-weight: 700;
+      margin-top: 6px;
+    }
+    @keyframes fadeQuote {
+      0%, 100% { opacity: 0; transform: translateY(6px); }
+      12%, 88% { opacity: 1; transform: translateY(0); }
+    }
+
     .hero-btns { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
     .btn {
       display: inline-flex;
@@ -386,7 +416,7 @@
         <a href="#why">Why Us</a>
         <a href="#reviews">Reviews</a>
         <a href="#location">Location</a>
-        <a href="https://wa.me/919480240751" class="nav-cta" target="_blank"><span class="mi" style="font-size:18px">chat</span> WhatsApp</a>
+        <a href="https://wa.me/919481404000" class="nav-cta" target="_blank"><span class="mi" style="font-size:18px">chat</span> WhatsApp</a>
       </div>
     </div>
   </nav>
@@ -395,11 +425,12 @@
   <section class="hero">
     <h1>Your Family Deserves<br><span>Gentle, Painless</span> Dental Care</h1>
     <p>Trusted by hundreds of families in Jayanagar. Dr. Preeti and team deliver expert dental treatments with warmth, patience, and a personal touch.</p>
+    <div class="hero-testimonial" id="hero-testimonial"></div>
     <div class="hero-btns">
-      <a href="https://wa.me/919480240751?text=Hi%2C%20I%27d%20like%20to%20book%20an%20appointment" class="btn btn-wa" target="_blank">
+      <a href="https://wa.me/919481404000?text=Hi%2C%20I%27d%20like%20to%20book%20an%20appointment" class="btn btn-wa" target="_blank">
         <span class="mi" style="font-size:20px">chat</span> Book on WhatsApp
       </a>
-      <a href="tel:+919480240751" class="btn btn-outline">
+      <a href="tel:+919481404000" class="btn btn-outline">
         <span class="mi" style="font-size:20px">call</span> Call Now
       </a>
       <a href="https://maps.app.goo.gl/FMSv9vmM2vZKQKjo6" class="btn btn-outline" target="_blank">
@@ -655,7 +686,7 @@
             <span class="mi">call</span>
             <div>
               <strong>Phone</strong>
-              <a href="tel:+919480240751">+91 94802 40751</a>
+              <a href="tel:+919481404000">+91 94814 04000</a>
             </div>
           </div>
           <div class="location-detail">
@@ -673,7 +704,7 @@
             </div>
           </div>
           <div class="location-btns">
-            <a href="https://wa.me/919480240751?text=Hi%2C%20I%27d%20like%20to%20book%20an%20appointment" class="btn btn-wa" target="_blank">
+            <a href="https://wa.me/919481404000?text=Hi%2C%20I%27d%20like%20to%20book%20an%20appointment" class="btn btn-wa" target="_blank">
               <span class="mi" style="font-size:18px">chat</span> WhatsApp Us
             </a>
             <a href="https://maps.app.goo.gl/FMSv9vmM2vZKQKjo6" class="btn btn-primary" target="_blank">
@@ -696,14 +727,41 @@
     </div>
     <p>Trusted Family Dentist in Jayanagar, Bangalore</p>
     <p style="margin-top: 8px">
-      <a href="tel:+919480240751" style="color:#d97706;text-decoration:none;font-weight:700">+91 94802 40751</a>
+      <a href="tel:+919481404000" style="color:#d97706;text-decoration:none;font-weight:700">+91 94814 04000</a>
       &nbsp;·&nbsp;
-      <a href="https://wa.me/919480240751" style="color:#25D366;text-decoration:none;font-weight:700">WhatsApp</a>
+      <a href="https://wa.me/919481404000" style="color:#25D366;text-decoration:none;font-weight:700">WhatsApp</a>
       &nbsp;·&nbsp;
       <a href="https://maps.app.goo.gl/FMSv9vmM2vZKQKjo6" style="color:#d6d3d1;text-decoration:none;font-weight:600" target="_blank">Google Maps</a>
     </p>
     <div class="copy">© 2026 Gulecha Dental Care. All rights reserved.</div>
   </footer>
 
+  <script>
+    (function() {
+      const quotes = [
+        { text: "The Best dentist I have seen until today — for myself and my son. Very warm and friendly.", author: "Akshatha Kadur" },
+        { text: "Dr Preeti explained the root cause using diagrams, which really helped me understand what was going on.", author: "Aishwarya Gurudutt" },
+        { text: "My 3 year old daughter's cavity filling — Dr Preethi handled the small kid and completed treatment effectively.", author: "Manjunath Uh" },
+        { text: "My daughter's braces treatment has been really good. Dr. Preeti is superb with children.", author: "Dimple Nahar" },
+        { text: "The first thing my 6yr old said after leaving was, 'Dr Preeti is a very good dentist you know..'", author: "Sana Abdul Raqueeb" },
+        { text: "I was damn nervous for wisdom tooth extraction, but Dr. Preeti made me comfortable. Incredibly patient!", author: "Padma Mehta" },
+        { text: "The entire filling procedure was completely painless. She also fixed a crown undone by another doctor.", author: "Indraneel R" },
+        { text: "Easy to trust Dr. Preeti — great hand, empathetic, in-depth knowledge. Superb with children.", author: "Anita Mehta" },
+        { text: "Though we reside at K.R.Puram, my family loves to visit because we get the best treatment.", author: "Jaganathan M" },
+        { text: "The comfort level made me feel I was in a spa, not a dental clinic!", author: "Prateek G" },
+        { text: "Very happy to find Gulecha Dental Care after trying many doctors. Confident, caring, and charges are reasonable.", author: "Padmini Krishnaswamy Balan" },
+        { text: "She takes time to explain every procedure. Very supportive with a naturally lovely personality.", author: "Aayush Daddha" },
+      ];
+      const el = document.getElementById('hero-testimonial');
+      let i = 0;
+      function show() {
+        const q = quotes[i];
+        el.innerHTML = '<blockquote style="animation-duration:5s">"' + q.text + '"<cite>— ' + q.author + '</cite></blockquote>';
+        i = (i + 1) % quotes.length;
+      }
+      show();
+      setInterval(show, 5000);
+    })();
+  </script>
 </body>
 </html>
